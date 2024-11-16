@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+body {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(252, 250, 250);
+}
+main {
+  display: grid;
+  max-width: 1150px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(72, 85, 106);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 30px 40px;
+}
+.card__boshi {
+  display: flex;
+  align-items: center;
+  color: #cfcfcf;
+  margin-bottom: 10px;
+}
+
+.card-5 .malumot {
+  color: #222;
+}
+.card__boshi img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff;
+}
+.ism {
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+.heading {
+  opacity: 0.5;
+}
+.card__boshi {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.malumot {
+  color: hsl(0, 0%, 81%);
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.card-5 .card__bosh {
+  color: #222;
+}
+
+.card-1 {
+  grid-column: 1/3;
+  background-color: #6650b2;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+.card-5 .card__boshi {
+  color: #222;
+}
+.card-2 {
+  grid-column: 3/4;
+}
+.card-3 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: #fff;
+}
+.card-3 .card__boshi {
+  color: #222;
+}
+.card-4 {
+  grid-row: 2/3;
+  grid-column: 2/4;
+}
+.card-3 .card__bosh {
+  color: #222;
+}
+.card-5 {
+  grid-row: -1/1;
+  grid-column: 4/5;
+  background-color: #fff;
+}
+
+.card-3 .malumot {
+  color: #222;
+}
